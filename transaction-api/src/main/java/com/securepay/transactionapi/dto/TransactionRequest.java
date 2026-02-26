@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 
 public record TransactionRequest(
         @NotBlank(message = "O número do cartão é obrigatório")
-        @CreditCardNumber(message = "Número de cartão inválido") // Valida o algoritmo de Luhn do cartão
+        @CreditCardNumber(message = "Número de cartão inválido")
         String cardNumber,
 
         @NotBlank(message = "O nome do titular é obrigatório")

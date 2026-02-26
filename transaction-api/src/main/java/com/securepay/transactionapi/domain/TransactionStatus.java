@@ -1,4 +1,8 @@
 package com.securepay.transactionapi.domain;
 
-public class TransactionStatus {
+public enum TransactionStatus {
+    PENDING,
+    APPROVED,
+    DENIED,
+    FAILED
 }
